@@ -1,0 +1,36 @@
+<div class="jumbotron">
+    <h3>Instructions</h3>
+    <ul>
+        <li>
+            By taking this quiz, you agree not to discuss/post the questions shown here
+        </li>
+        <li>
+            The duration of the quiz is 60 mins. Timing would be clearly shown
+        </li>
+        <li>
+            Once you start the quiz, the timer would not stop, irrespective of any client side issues
+        </li>
+        <li>
+            Questions can have single or multiple correct answers. They will be shown accordingly
+        </li>
+        <li>
+            Your total score and the time left at any point in the quiz would be displayed on the top
+        </li>
+        <li>
+            The scoring for each attempt of a question, would be visible to you in a separate section
+        </li>
+    </ul>
+    
+    <div class="form-horizontal form-group form-group-lg row">
+        <div class="col-xs-10 col-xs-offset-4 col-sm-offset-4 col-sm-4 col-md-3">
+            <button class="btn btn-primary btn-lg btn-block" {{action 'saveInvitation'}}>Begin Test</button>
+        </div>
+
+    </div>
+
+    {{#if responseMessage}}
+      <div class="alert alert-success">{{responseMessage}}</div>
+    {{/if}}
+
+    <br/><br/>
+</div>
